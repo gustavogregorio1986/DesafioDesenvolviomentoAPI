@@ -1,0 +1,26 @@
+﻿@model DesafioDesenvUsuario.Models.UsuarioModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+      <form method="post">
+        <fieldset>
+          <legend>Logar no Usuario</legend>
+          <div>
+            <label for="Titulo">Titulo:</label>
+            <input type="text" name="titulo" asp-for="Titulo" value=""  />
+          </div>
+         <div>
+            <label for="genero">genero:</label>
+            <input type="text" name="genero" asp-for="Genero" value="" />
+          </div>
+          <div>
+            <label for="autor">Autor:</label>
+            <input type="text" name="autor" asp-for="Autor" value="" />
+          </div>
+          <input type="submit" value="Cadastrar Usuario" onclick="CadastrarLivro(livroModel)"/>
+        </fieldset>
+      </form>
+
